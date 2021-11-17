@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,uDAAuD;EACzE,eAAe,EAAE,KAAK;EACtB,qBAAqB,EAAE,KAAK;CAe/B;;AARI,AAAD,oBAAU,CAAC;EACP,gBAAgB,EAAE,GAAG;EACrB,MAAM,EAAE,KAAK;CAKhB;;AAJI,AAAD,0BAAO,CAAC;EACJ,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "../scss/backgroud.scss"
+    ],
+    "names": [],
+    "file": "backgroud.css"
+}

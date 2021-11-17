@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Satisfy', cursive; */
+
+}
+
+
+header {
+    width: 100%;
+    /* same = left: 0 right: 0 */
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    margin: 20px 0;
+}
+
+header .logo h1{
+    font-family: 'Satisfy', cursive;
+    color: white;
+
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header ul li{
+    margin: 0 20px;
+    overflow: hidden;
+   
+}
+
+header li a::after{
+    content: "";
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.5s;
+    width: 0;
+}
+
+header li a::before{
+    content: "";
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    transition: all 0.5s;
+    width: 100%;
+    transform: translateX(100%);
+}
+
+header li:hover a::after{
+    width: 100%;
+}
+
+header li:hover a::before{
+    transform: translateX(0%);
+    
+}
+
+header ul li a{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+    /* mất gạch chân */
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+header button{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+    padding: 15px 35px;
+    color: white;
+    font-size: 15px;
+    background-color:  transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    /* border-radius: 5px; */
+}
+
+header nav button:hover{
+    background-color: #fff;
+    color: #000;
+    transform: translateY(-5px);
+
+
+}
+
+.bar i{
+    color: #000;
+    cursor: pointer;
+}
+
+.bar{
+    margin-top: 10px;
+    height: fit-content;
+    display: none;
+}
+
+#nav-phone {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    transform: translateX(-100%);
+}
+
+@media only screen and (max-width:1000px){
+    nav{
+        display: none !important;
+    }
+
+    header{
+        background-color: #fff;
+        margin-top: 0;
+
+
+    }
+
+    header .logo h1{
+        color: #000 !important;
+    }
+    .bar{
+        display: block;
+    }
+}

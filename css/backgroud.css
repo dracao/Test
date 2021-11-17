@@ -1,0 +1,17 @@
+.background {
+  height: 100vh;
+  background-image: url(http://shanereact.ibthemespro.com/img/slider/3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background__content {
+  background-color: red;
+  height: 100px;
+}
+
+.background__content__name {
+  background-color: aqua;
+  height: 50px;
+}
+/*# sourceMappingURL=backgroud.css.map */
